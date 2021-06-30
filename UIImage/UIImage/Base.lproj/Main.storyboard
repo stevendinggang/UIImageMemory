@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UIImage" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Qxy-f0-vQW">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PlS-ap-nKg">
+                                <rect key="frame" x="147" y="78" width="120" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="1K5-Pw-nXI"/>
+                                    <constraint firstAttribute="width" constant="120" id="eh9-eJ-0HY"/>
+                                </constraints>
+                                <state key="normal" title="load Image"/>
+                                <connections>
+                                    <action selector="loadImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e2k-Kv-RFf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Qxy-f0-vQW" secondAttribute="trailing" id="4R7-o1-YFt"/>
+                            <constraint firstItem="PlS-ap-nKg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DGn-qH-FKL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Qxy-f0-vQW" secondAttribute="bottom" id="Ghc-MP-tN8"/>
+                            <constraint firstItem="Qxy-f0-vQW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Ixz-lm-1AX"/>
+                            <constraint firstItem="Qxy-f0-vQW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="UTS-CU-K0s"/>
+                            <constraint firstItem="PlS-ap-nKg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="34" id="hWU-3I-6MS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="image" destination="Qxy-f0-vQW" id="4LM-RF-jRi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="93" y="109"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
